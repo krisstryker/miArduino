@@ -25,6 +25,7 @@ void temporizador(){//Funcion de temporizado
     digitalWrite(led, estado);
 }
   else{
+    estado = !estado;
     if(retardo == 5000){
       retardo = 10000;
 }
