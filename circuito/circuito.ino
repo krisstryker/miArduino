@@ -16,7 +16,7 @@ void loop() {
  temporizador();
 }
 
-void temporizador(){
+void temporizador(){//Funcion de temporizado
   if (tiempo - tiempoAnterior < retardo){
     digitalWrite(led, estado);
 }
