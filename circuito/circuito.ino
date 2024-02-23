@@ -14,23 +14,20 @@ void setup() {
 void loop() {
  tiempo = millis();
  temporizador();
-
 }
 
 void temporizador(){
   if (tiempo - tiempoAnterior < retardo){
     digitalWrite(led, estado);
-    
-    }
+}
   else{
     if(retardo == 5000){
       retardo = 10000;
-      }
+}
 
     else{
       retardo = 5000;  
-        }
+}
       temporizador();
-    }
-    
-  }
+ }
+}
