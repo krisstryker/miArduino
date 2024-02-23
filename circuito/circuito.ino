@@ -1,5 +1,7 @@
 int led = 3;
 int pulsador = 4; 
+int flotaSuperior = 5;
+int flotaInferior = 6;
 
 unsigned long tiempo;
 unsigned long tiempoAnterior;
@@ -8,7 +10,9 @@ int estado = HIGH;
 
 void setup() {
   pinMode(led, OUTPUT);
-  pinMode(pulsador, INPUT);
+  pinMode(pulsador, INPUT_PULLUP);
+  pinMode(flotaSuperior, INPUT_PULLUP);
+  pinMode(flotaInferior, INPUT_PULLUP);
 }
 
 void loop() {
